@@ -1,78 +1,79 @@
 ## Tipos Primitivos
 
-são os tipos de dados mais básicos, imutáveis, que não possuem métodos ou propriedades diretamente (embora possamos usá-los como se tivessem,
-graças ao envolvimento automático em objetos). 
-Eles incluem:
+## Strings com Template Literals - Representa textos, como palavras ou frases. Sempre delimitada por aspas simples ('), duplas (") ou crases (`) para template literals.
+Permite interpolar variáveis em uma string de forma mais legível.
 
-1. String
-Representa uma sequência de caracteres.
-```let nome = "João"; // String com aspas duplas
-let sobrenome = 'Silva'; // String com aspas simples
-let mensagem = `Olá, ${nome}!`; // Template literal (permite interpolação)
+```const nome = "Willami"; // String
+const cidade = "Recife"; // String
+console.log(`Meu nome é ${nome} e sou de ${cidade}`);
 ```
-2. Number
-Representa números, sejam inteiros ou de ponto flutuante.
-```let idade = 25; // Número inteiro
-let altura = 1.75; // Número de ponto flutuante
-let infinito = Infinity; // Representa infinito
-let notANumber = NaN; // Representa "Not a Number"
+## Number
+Usados para representar valores numéricos, incluindo inteiros e decimais.
+```const numero1 = 30; // Number: Um valor numérico.
+const numero2 = 20; // Number: Outro valor numérico.
 ```
-3. BigInt
-Usado para representar números inteiros muito grandes, além do limite do tipo Number.
-```let numeroGrande = 1234567890123456789012345678901234567890n; // Adiciona "n" ao final
+## Realizando operações básicas:
+```const soma = numero1 + numero2; // Soma
+console.log(`O resultado da soma é: ${soma}`);
 ```
-4. Boolean
-Representa um valor verdadeiro ou falso.
-```let isStudent = true; // Verdadeiro
-let hasGraduated = false; // Falso
+```const sub = numero1 - numero2; // Subtração
+console.log(`O resultado da subtração é: ${sub}`);
 ```
-5. Undefined
-Uma variável que foi declarada, mas não recebeu valor.
-```let x; // undefined
-console.log(x); // undefined
+```const mult = numero1 * numero2; // Multiplicação
+console.log(`O resultado da multiplicação é: ${mult}`);
 ```
-6. Null
-Representa ausência de valor intencional.
-```let nada = null; // Valor nulo
+```const div = numero1 / numero2; // Divisão
+console.log(`O resultado da divisão é: ${div}`);
 ```
-7. Symbol
-Cria valores únicos, frequentemente usados como identificadores únicos para propriedades de objetos.
-```let simbolo = Symbol("id"); // Um símbolo único com uma descrição opcional
+## Média: Cálculo de médias usando números:
+
+```const nota1 = 9; // Primeira nota (Number)
+const nota2 = 7; // Segunda nota (Number)
+const nota3 = 5; // Terceira nota (Number)
+const media = (nota1 + nota2 + nota3) / 3; // Média das notas
+console.log(`O resultado da média é ${media}`);
 ```
-Exemplos:
-```let nome = "Ana"; // String
-let idade = 30; // Number
-let altura = 1.7; // Number
-let casado = false; // Boolean
-let indefinido; // Undefined
-let vazio = null; // Null
-let id = Symbol("identificador"); // Symbol
-let numeroGrande = 123456789012345678901234567890123n; // BigInt
-console.log(typeof nome); // "string"
-console.log(typeof idade); // "number"
-console.log(typeof casado); // "boolean"
-console.log(typeof indefinido); // "undefined"
-console.log(typeof vazio); // "object" (comportamento histórico)
-console.log(typeof id); // "symbol"
-console.log(typeof numeroGrande); // "bigint"
+## Cálculos Financeiros
+
+```Usando percentuais para desconto:
+const valororiginal = 100; // Valor original (Number)
+const percentualdesconto = 20; // Percentual de desconto (Number)
+const desconto = (valororiginal * percentualdesconto) / 100; // Valor do desconto
+const preco = valororiginal - desconto; // Valor final com desconto
+console.log(`O valor do produto com desconto é: ${preco}`);
 ```
-CÓDIGO
-```let nome = "Maria Silva"; // String
-let idade = 28; // Number
-let altura = 1.65; // Number
-let isEstudante = true; // Boolean
-let dataAtualizacao; // Undefined
-let localNascimento = null; // Null
-let identificador = Symbol("id_usuario"); // Symbol
-let pontosAcumulados = 987654321987654321n; // BigInt
-console.log("=== Cadastro de Usuário ===");
-console.log("Nome:", nome);
-console.log("Idade:", idade, "anos");
-console.log("Altura:", altura, "m");
-console.log("É estudante?", isEstudante ? "Sim" : "Não");
-console.log("Data de atualização:", dataAtualizacao);
-console.log("Local de nascimento:", localNascimento);
-console.log("Identificador único:", identificador.toString());
-console.log("Pontos acumulados:", pontosAcumulados);
+##Imposto de renda:
+
+```const salario = 3000; // Salário bruto (Number)
+const aliquota = 0.15; // Alíquota do imposto (Number)
+const imposto = salario * aliquota; // Cálculo do imposto
+console.log(`O imposto a ser pago é de R$ ${imposto}`);
 ```
+## Conversores
+De moedas (reais para dólares):
+const real = 100; // Quantidade em reais (Number)
+const dolar = 5.44; // Cotação do dólar (Number)
+const conv = real * dolar; // Conversão
+console.log(`Na cotação atual, seus 100 reais valem ${conv} dólares americanos`);
+```
+## De Celsius para Fahrenheit:
+
+```const cel = 28; // Temperatura em Celsius (Number)
+const far = (cel * 9 / 5) + 32; // Fórmula de conversão
+console.log(`28° Celsius são ${far} Fahrenheit`);
+```
+## IMC (Índice de Massa Corporal): Calcula o IMC com base no peso e altura:
+
+```const peso = 80; // Peso em kg (Number)
+const altura = 1.80; // Altura em metros (Number)
+const imc = peso / (altura * altura); // Fórmula do IMC
+console.log(`O IMC é ${imc.toFixed(2)}. Seu peso está normal`);
+```
+
+
+
+
+
+
+
 
