@@ -1,1 +1,77 @@
+## Tipos Primitivos:
+são os tipos de dados mais básicos, imutáveis, que não possuem métodos ou propriedades diretamente (embora possamos usá-los como se tivessem,
+graças ao envolvimento automático em objetos). 
+Eles incluem:
+
+1. String
+Representa uma sequência de caracteres.
+```let nome = "João"; // String com aspas duplas
+let sobrenome = 'Silva'; // String com aspas simples
+let mensagem = `Olá, ${nome}!`; // Template literal (permite interpolação)
+```
+2. Number
+Representa números, sejam inteiros ou de ponto flutuante.
+```let idade = 25; // Número inteiro
+let altura = 1.75; // Número de ponto flutuante
+let infinito = Infinity; // Representa infinito
+let notANumber = NaN; // Representa "Not a Number"
+```
+3. BigInt
+Usado para representar números inteiros muito grandes, além do limite do tipo Number.
+```let numeroGrande = 1234567890123456789012345678901234567890n; // Adiciona "n" ao final
+```
+4. Boolean
+Representa um valor verdadeiro ou falso.
+```let isStudent = true; // Verdadeiro
+let hasGraduated = false; // Falso
+```
+5. Undefined
+Uma variável que foi declarada, mas não recebeu valor.
+```let x; // undefined
+console.log(x); // undefined
+```
+6. Null
+Representa ausência de valor intencional.
+```let nada = null; // Valor nulo
+```
+7. Symbol
+Cria valores únicos, frequentemente usados como identificadores únicos para propriedades de objetos.
+```let simbolo = Symbol("id"); // Um símbolo único com uma descrição opcional
+```
+Exemplos:
+```let nome = "Ana"; // String
+let idade = 30; // Number
+let altura = 1.7; // Number
+let casado = false; // Boolean
+let indefinido; // Undefined
+let vazio = null; // Null
+let id = Symbol("identificador"); // Symbol
+let numeroGrande = 123456789012345678901234567890123n; // BigInt
+console.log(typeof nome); // "string"
+console.log(typeof idade); // "number"
+console.log(typeof casado); // "boolean"
+console.log(typeof indefinido); // "undefined"
+console.log(typeof vazio); // "object" (comportamento histórico)
+console.log(typeof id); // "symbol"
+console.log(typeof numeroGrande); // "bigint"
+```
+CÓDIGO
+```let nome = "Maria Silva"; // String
+let idade = 28; // Number
+let altura = 1.65; // Number
+let isEstudante = true; // Boolean
+let dataAtualizacao; // Undefined
+let localNascimento = null; // Null
+let identificador = Symbol("id_usuario"); // Symbol
+let pontosAcumulados = 987654321987654321n; // BigInt
+console.log("=== Cadastro de Usuário ===");
+console.log("Nome:", nome);
+console.log("Idade:", idade, "anos");
+console.log("Altura:", altura, "m");
+console.log("É estudante?", isEstudante ? "Sim" : "Não");
+console.log("Data de atualização:", dataAtualizacao);
+console.log("Local de nascimento:", localNascimento);
+console.log("Identificador único:", identificador.toString());
+console.log("Pontos acumulados:", pontosAcumulados);
+```
 
