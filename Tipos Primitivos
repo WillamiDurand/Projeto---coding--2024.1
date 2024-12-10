@@ -1,4 +1,5 @@
-## Tipos Primitivos:
+## Tipos Primitivos
+
 são os tipos de dados mais básicos, imutáveis, que não possuem métodos ou propriedades diretamente (embora possamos usá-los como se tivessem,
 graças ao envolvimento automático em objetos). 
 Eles incluem:
